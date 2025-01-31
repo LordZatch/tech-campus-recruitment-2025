@@ -21,15 +21,15 @@ The final solution leverages memory-mapped file I/O (mmap), which allows us to t
 Using mmap.find(), we can quickly locate occurrences of the target date without loading the entire file into RAM.
 This method significantly reduces I/O operations, making it highly efficient.
 
-- Final Solution Summary
+- Final Solution Summary -
 We chose the memory-mapped file approach because it offers a balance between speed and efficiency without requiring additional indexing. It allows for fast substring searches directly within the file while keeping memory usage minimal. The solution can handle very large log files efficiently by processing them in-place rather than loading them into memory. Additionally, it avoids the complexity of implementing a binary search on text-based logs.
 
 - Steps to Run
-Prerequisites
+Prerequisites - 
 Ensure Python 3.x is installed on your system.
 Have a log file (logs_2024.log) stored in the same directory as the script.
 Install necessary dependencies (if any).
-Running the Script
+Running the Script.
 Save the script as extract_logs.py.
 Open a terminal and navigate to the script's directory using:
 VS code terminal - 
